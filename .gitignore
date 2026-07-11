@@ -1,0 +1,37 @@
+# Compiled binaries
+*.exe
+payload
+payload.*
+blackice-server
+blackice-implant*
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+enc.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Build artifacts
+payloads/implants/payload*
+payloads/server/*.exe
+
+# Sensitive files
+*.json
+.env*
+*.pem
+*.key
+*.crt
+*.dmp
+
+# Keep serve.go
+!payloads/implants/serve.go
