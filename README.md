@@ -83,11 +83,11 @@ BLACKICE is a cross-platform Command & Control framework built in Go for offensi
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                      C2 SERVER (Your Machine)               │
-│  ┌──────────────────────────────────────────────────────┐  │
-│  │  HTTP Server (Port 8443)                             │  │
-│  │  - /beacon      (Implant check-in endpoint)          │  │
-│  │  - /sessions    (Web dashboard)                      │  │
-│  └──────────────────────────────────────────────────────┘  │
+│  ┌──────────────────────────────────────────────────────┐   │
+│  │  HTTP Server (Port 8443)                             │   │
+│  │  - /beacon      (Implant check-in endpoint)          │   │
+│  │  - /sessions    (Web dashboard)                      │   │
+│  └──────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────┘
                             ▲
                             │ HTTP POST (JSON)
@@ -723,23 +723,23 @@ sudo netstat -antp | grep 8443
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│  TACTIC                TECHNIQUE                       ID     │
+│  TACTIC                TECHNIQUE                       ID    │
 ├──────────────────────────────────────────────────────────────┤
-│  Reconnaissance        System Information Discovery   T1082   │
-│  Credential Access     OS Credential Dumping          T1003   │
-│                        Credentials from Password      T1555   │
-│                        Unsecured Credentials          T1552   │
-│  Defense Evasion       Impair Defenses                T1562   │
-│                        Indicator Removal on Host      T1070   │
-│                        Hide Artifacts                 T1564   │
-│  Persistence           Boot/Logon Autostart Exec      T1547   │
-│                        Scheduled Task/Job             T1053   │
-│                        Event Triggered Execution      T1546   │
-│  Privilege Escalation  Abuse Elevation Control        T1548   │
-│  Execution             Process Injection              T1055   │
-│  Command & Control     Application Layer Protocol     T1071   │
-│                        Encrypted Channel              T1573   │
-│  Impact                Data Encrypted for Impact      T1486   │
+│  Reconnaissance        System Information Discovery   T1082  │
+│  Credential Access     OS Credential Dumping          T1003  │
+│                        Credentials from Password      T1555  │
+│                        Unsecured Credentials          T1552  │
+│  Defense Evasion       Impair Defenses                T1562  │
+│                        Indicator Removal on Host      T1070  │
+│                        Hide Artifacts                 T1564  │
+│  Persistence           Boot/Logon Autostart Exec      T1547  │
+│                        Scheduled Task/Job             T1053  │
+│                        Event Triggered Execution      T1546  │
+│  Privilege Escalation  Abuse Elevation Control        T1548  │
+│  Execution             Process Injection              T1055  │
+│  Command & Control     Application Layer Protocol     T1071  │
+│                        Encrypted Channel              T1573  │
+│  Impact                Data Encrypted for Impact      T1486  │
 └──────────────────────────────────────────────────────────────┘
 ```
 
